@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    height: 100%;
+    color: #FFF;
+    font-size: 62.5%;
+}
+
+.mdl-layout__header {
+    background-color: #000;
+}
+
+.mdl-layout-title,
+.mdl-navigation__link {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+.navbar-center {
+    margin: auto !important;
+}
+
+.mdl-layout-title {
+    font-size: 3em;
+}
+
+
+.section-div {
+    display: flex;
+    display: -webkit-flex;
+}
+
+#greeting {
+    background-image: url('../images/shanghai.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#big-greeting {
+    color: #FFF;
+    font-size: 10em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+#big-greeting-sub {
+    color: #FFF;
+    font-size: 3em;
+    text-align: center;
+}
+
+#about {
+    height: 50vh;
+    background-color: #FFF;
+}
+@media (max-width: 1024px) {
+    .mdl-layout__drawer-button {
+        color: #FFF;
+    }
+
+    #greeting {
+        height: 40vh;
+    }
+
+    #big-greeting {
+        font-size: 7em;
+    }
+
+    #big-greeting-sub {
+        font-size: 2em;
+    }
+}

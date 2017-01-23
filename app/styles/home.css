@@ -26,6 +26,13 @@ body {
   display: -webkit-flex;
 }
 
+.section-title {
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+}
+
 #greeting {
   background-image: url('../images/shanghai-birdseye-colour.jpg');
   background-size: 100%;
@@ -44,33 +51,81 @@ body {
 
 #big-greeting {
   color: #FFF;
-  font-size: 10em;
+  font-size: 18em;
+  font-weight: bold;
   text-align: center;
-  margin-bottom: 0.5em;
 }
 
 #big-greeting-sub {
   color: #FFF;
-  font-size: 3em;
+  font-size: 5em;
+  font-weight: 300;
   text-align: center;
+  text-shadow: 1px 1px #5c5a5a;
 }
 
 #about {
-  height: 50vh;
+  height: 600px;
   background-color: #FFF;
+  color: #000;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: start;
+  justify-content: start;
 }
 
+#about-container {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#about-selfie {
+    max-width: 100%;
+    height: 75%;
+    margin-left: 15%;
+}
+
+#about-desc {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5em;
+    max-width: 40%;
+}
+
+#experience {
+    height: 600px;
+    background-color: #000;
+    color: #FFF;
+}
 @media (max-width: 1024px) {
   .mdl-layout__drawer-button {
     color: #FFF;
   }
+
+  .section-title {
+      font-size: 5em;
+  }
+
   #greeting {
     height: 40vh;
   }
   #big-greeting {
-    font-size: 7em;
+    font-size: 10em;
   }
   #big-greeting-sub {
-    font-size: 2em;
+    font-size: 4em;
+  }
+
+  #about-selfie {
+      height: 50%;
+      margin-left: 30%;
+  }
+
+  #about-desc {
+      font-size: 2.5em;
   }
 }

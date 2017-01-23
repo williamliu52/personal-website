@@ -38,15 +38,24 @@
   <!-- include Google's Material Design -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-  <!-- include jQuery -->
+  <!-- include jQuery for Bootstrap-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- include Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!-- include Web Font Loader -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script>
-      Webfont.load({ google: { families: ['Montserrat', 'Lato'] } });
+    Webfont.load({
+      google: {
+        families: ['Montserrat', 'Lato']
+      }
+    });
   </script>
 
   <!-- include personal style sheet -->
@@ -78,32 +87,40 @@
     </div>
     <!-- End of Header -->
     <main class="mdl-layout__content">
-        <!-- Greeting -->
-        <div id="greeting" class="section-div">
-            <div id="big-greeting">Will Liu</div>
-            <div id="big-greeting-sub">Personal Website</div>
+      <!-- Greeting -->
+      <div id="greeting" class="section-div">
+        <div id="big-greeting">Will Liu</div>
+        <div id="big-greeting-sub">Developer, Future Engineer &amp; Sports Fanatic</div>
+      </div>
+      <!-- End of Greeting -->
+      <!-- About -->
+      <div id="about" class="section-div">
+        <div class="section-title">About Me</div>
+        <div id="about-container">
+            <div id="about-desc">
+                I'm a 3rd year Computer Engineering student at the University of Waterloo.
+                My interests right now include web development, IoT, embedded systems and machine learning.
+                I put a high emphasis on UI, UX, and good design. In my spare time I love to lift, cook, take photos and keep up with pro sports.
+            </div>
+            <div><img id="about-selfie" src="images/selfie.jpg" alt="Selfie!" class="img-circle" /></div>
         </div>
-        <!-- End of Greeting -->
-        <!-- About -->
-        <div id="about" class="section-div">
+      </div>
+      <!-- End of About -->
+      <!-- Experience -->
+      <div id="experience" class="section-div">
 
-        </div>
-        <!-- End of About -->
-        <!-- Resume -->
-        <div id="resume" class="section-div">
+      </div>
+      <!-- End of Experience -->
+      <!-- Projects -->
+      <div id="projects" class="section-div">
 
-        </div>
-        <!-- End of Resume -->
-        <!-- Projects -->
-        <div id="projects" class="section-div">
+      </div>
+      <!-- End of Projects -->
+      <!-- Contact & Footer -->
+      <div id="contact" class="section-div">
 
-        </div>
-        <!-- End of Projects -->
-        <!-- Contact & Footer -->
-        <div id="contact" class="section-div">
-
-        </div>
-        <!-- End of Contact & Footer -->
+      </div>
+      <!-- End of Contact & Footer -->
 
 
 

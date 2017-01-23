@@ -45,7 +45,9 @@
 
   <!-- include Web Font Loader -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="scripts/fonts.js"></script>
+  <script>
+      Webfont.load({ google: { families: ['Montserrat', 'Lato'] } });
+  </script>
 
   <!-- include personal style sheet -->
   <link rel="stylesheet" href="styles/home.css">
@@ -59,7 +61,7 @@
         <!-- Navigation -->
         <nav class="mdl-navigation mdl-layout--large-screen-only navbar-center">
           <a class="mdl-navigation__link" href="#about">ABOUT</a>
-          <a class="mdl-navigation__link" href="">RESUME</a>
+          <a class="mdl-navigation__link" href="">EXPERIENCE</a>
           <a class="mdl-navigation__link" href="">PROJECTS</a>
           <a class="mdl-navigation__link" href="">CONTACT</a>
         </nav>
@@ -69,9 +71,9 @@
       <span class="mdl-layout-title">Menu</span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="#about">ABOUT</a>
-        <a class="mdl-navigation__link" href="">RESUME</a>
-        <a class="mdl-navigation__link" href="">PROJECTS</a>
-        <a class="mdl-navigation__link" href="">CONTACT</a>
+        <a class="mdl-navigation__link" href="#experience">EXPERIENCE</a>
+        <a class="mdl-navigation__link" href="#projects">PROJECTS</a>
+        <a class="mdl-navigation__link" href="#contact">CONTACT</a>
       </nav>
     </div>
     <!-- End of Header -->

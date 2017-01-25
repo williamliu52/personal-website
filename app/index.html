@@ -38,6 +38,9 @@
   <!-- include jQuery for Bootstrap-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+  <!-- include Font Awesome -->
+  <script src="https://use.fontawesome.com/c8f417d0eb.js"></script>
+
   <!-- include Bootstrap -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -58,44 +61,107 @@
   <link rel="stylesheet" href="styles/home.css">
 </head>
 
-<body>
-    <!-- Header -->
-    
-    <!-- End of Header -->
-      <!-- Greeting -->
-      <div id="greeting" class="section-div">
-        <div id="big-greeting">Will Liu</div>
-        <div id="big-greeting-sub">Developer, Future Engineer &amp; Sports Fanatic</div>
-      </div>
-      <!-- End of Greeting -->
-      <!-- About -->
-      <div id="about" class="section-div">
-        <div class="section-title">About Me</div>
-        <div id="about-container">
-            <div id="about-desc">
-                I'm a 3rd year Computer Engineering student at the University of Waterloo.
-                My interests right now include web development, IoT, embedded systems and machine learning.
-                I put a high emphasis on UI, UX, and good design. In my spare time I love to lift, cook, take photos and keep up with pro sports.
-            </div>
-            <div><img id="about-selfie" src="images/selfie.jpg" alt="Selfie!" class="img-circle" /></div>
+<body data-spy="scroll" data-target="#header-navbar" data-offset="50">
+  <!-- Header -->
+  <div id="header-navbar">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-navbar-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="collapsed-navbar-menu">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li id="exp-link"><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <!-- End of About -->
-      <!-- Experience -->
-      <div id="experience" class="section-div">
+    </nav>
+  </div>
+  <!-- End of Header -->
 
-      </div>
-      <!-- End of Experience -->
-      <!-- Projects -->
-      <div id="projects" class="section-div">
+  <!-- Greeting -->
+  <div id="greeting" class="section-div">
+    <div id="big-greeting">Will Liu</div>
+    <div id="big-greeting-sub">Developer, Future Engineer &amp; Sports Fanatic</div>
+  </div>
+  <!-- End of Greeting -->
 
+  <!-- About -->
+  <div id="about" class="section-div">
+    <div class="section-title">About Me</div>
+    <div id="about-container">
+      <div id="about-desc">
+        Hey there! I'm a 3rd year Computer Engineering student at the University of Waterloo. My interests right now include web development, IoT, machine learning, and UI/UX. In my spare time I love to lift, cook, take photos and keep up with pro sports.
       </div>
-      <!-- End of Projects -->
-      <!-- Contact & Footer -->
-      <div id="contact" class="section-div">
-
+      <div><img id="about-selfie" src="images/selfie.jpg" alt="Selfie!" class="img-circle" /></div>
+    </div>
+  </div>
+  <!-- End of About -->
+  <!-- Experience -->
+  <div id="experience" class="section-div">
+    <div class="section-title">Experience</div>
+    <div id="experience-container">
+      <div class="experience-job">
+        <div class="experience-job-desc">
+          <h1>IBM Cognos Analytics</h1>
+          <h4>Software Developer | Sept. - Dec. 2016</h4>
+          <p>- Decreased application loading time and HTTP requests by over 110% using RequireJS Optimizer</p>
+          <p>- Implemented dynamic solution for style loading, eliminating FOUC and improving UX</p>
+          <p>- Created JavaScript samples detailing usage of the application’s embedding feature</p>
+          <p>- Delivered reliable defect fixes and wrote tests that reduced the team bug pool by 50%</p>
+        </div>
+        <div class="experience-job-logo">
+          <img id="experience-ibm" src="images/ibm-logo.png" alt="IBM Logo" />
+        </div>
       </div>
-      <!-- End of Contact & Footer -->
+      <div id="experience-resume">
+        <h4 class="text-center">If you would like to learn more here is my Resume</h4>
+        <div class="text-center">
+          <button type="button" class="btn btn-default btn-lg">
+                    <a href="https://drive.google.com/file/d/0B-m4Cb8EQXmUQV9RaVU2cDJiUGc/view?usp=sharing" target="_blank" >View <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+                </button>
+          <button type="button" class="btn btn-default btn-lg">
+                    <a href="files/Will_Liu_Resume.pdf" target="_blank">Download <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+                </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Experience -->
+  <!-- Contact & Footer -->
+  <div id="contact" class="section-div">
+    <div class="section-title">Contact</div>
+    <div id="contact-caption" class="center-block">
+      <h4>Questions, Comments, Concerns?</h4>
+    </div>
+    <div id="contact-container">
+      <div class="contact-type">
+        <div class="center-block">
+          <span class="fa fa-envelope fa-2x" aria-hidden="true"></span> <a href="mailto:will@wrliu.com" target="_top">will@wrliu.com</a>
+        </div>
+      </div>
+      <div class="contact-type">
+        <div class="center-block">
+          <span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span> <a href="https://www.linkedin.com/in/willrliu" target="_blank">willrliu</a>
+        </div>
+      </div>
+      <div class="contact-type">
+        <div class="center-block">
+          <span class="fa fa-github fa-2x" aria-hidden="true"></span> <a href="https://github.com/williamliu52" target="_blank">williamliu52</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Contact & Footer -->
   </div>
 
   <!-- build:js scripts/main.min.js -->

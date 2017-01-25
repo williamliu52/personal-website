@@ -3,23 +3,76 @@ body {
   height: 100%;
   color: #FFF;
   font-size: 62.5%;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.mdl-layout__header {
-  background-color: #000;
-}
 
-.mdl-layout-title, .mdl-navigation__link {
+/* Start of Navbar CSS */
+
+.navbar.navbar-default {
   font-family: 'Montserrat', 'Roboto', sans-serif;
+  background-color: #000;
+  border: none;
 }
 
-.navbar-center {
-  margin: auto !important;
+.navbar .navbar-collapse {
+  text-align: center;
+  border: none;
 }
 
-.mdl-layout-title {
-  font-size: 3em;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  width: 30%;
 }
+
+.navbar-default .navbar-nav li {
+  width: 33%;
+  margin: auto;
+}
+
+.navbar-default .navbar-nav li a {
+  font-size: 2.5em;
+  color: #FFF;
+}
+
+.navbar-collapse .nav.navbar-nav li:hover, .navbar-collapse .nav.navbar-nav li:focus, .navbar-collapse .nav.navbar-nav li.active a, .navbar-collapse .nav.navbar-nav li.active a:hover, .navbar-collapse .nav.navbar-nav li.active a:focus, .navbar-collapse .nav.navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover, {
+  background-color: #3e3e3e !important;
+  color: #FFF !important;
+}
+
+
+/* End of Navbar CSS */
+
+
+/* Start of Collapsed Navbar CSS */
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #000;
+  color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+.navbar-brand {
+  font-family: 'Lato', sans-serif;
+  color: #FFF !important;
+  display: none;
+}
+
+
+/* End of Collapsed Navbar CSS */
+
+
+/* General values for sections */
 
 .section-div {
   display: flex;
@@ -27,18 +80,22 @@ body {
 }
 
 .section-title {
-    text-align: center;
-    font-size: 10em;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 3%;
+  text-align: center;
+  font-size: 10em;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 3%;
 }
+
+
+/* CSS for jumbotron/greeting  */
 
 #greeting {
   background-image: url('../images/shanghai-birdseye-colour.jpg');
-  background-size: 100%;
+  background-size: 110%;
+  background-position-x: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -64,6 +121,12 @@ body {
   text-shadow: 1px 1px #5c5a5a;
 }
 
+
+/* End of CSS for jumbotron/greeting  */
+
+
+/* Start of About Me section */
+
 #about {
   height: 600px;
   background-color: #FFF;
@@ -75,41 +138,166 @@ body {
 }
 
 #about-container {
-    display: flex;
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: center;
-    justify-content: center;
-    margin-top: 3%;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 3%;
 }
 
 #about-selfie {
-    max-width: 100%;
-    height: 75%;
-    margin-left: 15%;
+  max-width: 100%;
+  height: 300px;
+  margin-left: 15%;
 }
 
 #about-desc {
-    font-family: 'Lato', sans-serif;
-    font-size: 3.5em;
-    max-width: 40%;
+  font-family: 'Lato', sans-serif;
+  font-size: 3.5em;
+  max-width: 40%;
+  margin-top: 3%;
 }
+
+
+/* Start of About Me section */
+
+
+/* Start of Experience section */
 
 #experience {
-    height: 600px;
-    background-color: #000;
-    color: #FFF;
+  height: 600px;
+  background-color: #000;
+  color: #FFF;
+  webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: start;
+  justify-content: start;
 }
+
+.experience-container {
+  display: flex;
+  webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.experience-job {
+  display: flex;
+  webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.experience-job-desc {
+  margin: 10px;
+  width: 50%;
+}
+
+.experience-job-desc h1, h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+.experience-job-desc p {
+  font-family: 'Lato', serif;
+  font-size: 2.5em;
+}
+
+.experience-job-logo {
+  margin: 10px;
+  width: 10%;
+}
+
+#experience-ibm {
+  height: 70px;
+  margin-top: 30px;
+}
+
+#experience-resume {
+  margin-top: 25px;
+}
+
+#experience-resume button {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #000;
+  color: #FFF;
+}
+
+#experience-resume button a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+/* End of Experience section */
+
+
+/* Start of Contact section */
+
+#contact {
+  height: 500px;
+  background-color: #FFF;
+  color: #000;
+  webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+#contact-container {
+  display: flex;
+  webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+#contact-caption {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.contact-type {
+  display: flex;
+  width: 33%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 4em;
+}
+
+.contact-type a {
+  text-decoration: none;
+}
+
+.contact-type a:hover {
+  color: #000;
+}
+
+
+/* End of Contact section */
+
+
+/* In between size of desktop and tablet */
+
 @media (max-width: 1024px) {
-  .mdl-layout__drawer-button {
-    color: #FFF;
+  .navbar .navbar-nav {
+    width: 60%;
   }
-
+  .navbar-default .navbar-nav li a {
+    font-size: 2em;
+  }
   .section-title {
-      font-size: 5em;
+    font-size: 5em;
   }
-
   #greeting {
     height: 40vh;
   }
@@ -119,13 +307,143 @@ body {
   #big-greeting-sub {
     font-size: 4em;
   }
-
   #about-selfie {
-      height: 50%;
-      margin-left: 30%;
+    height: 200px;
+    margin-left: 15%;
   }
-
   #about-desc {
-      font-size: 2.5em;
+    font-size: 2.5em;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  #about {
+    height: 350px;
+  }
+  #experience-ibm {
+    height: 70px;
+    margin-left: 15px;
+  }
+  .contact-type {
+    font-size: 3em;
+  }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: block;
+  }
+  #greeting {
+    background-position-x: center;
+    background-size: 900px;
+  }
+  #experience {
+    height: 500px;
+  }
+  .experience-job-logo {
+    display: none;
+  }
+  .experience-job-desc {
+    width: 70%;
+  }
+  .experience-job-desc h1 {
+    font-size: 4em;
+  }
+  .experience-job-desc p {
+    font-size: 2.2em;
+  }
+  #contact-container {
+    width: 95%;
+  }
+  .contact-type {
+    font-size: 2.5em;
+  }
+}
+
+
+/* Extra small devices (phones) */
+
+@media (max-width: 480px) {
+  .navbar-default .navbar-nav li {
+    width: 40%;
+  }
+  #exp-link {
+    width: 80%;
+  }
+  #greeting {
+    height: 70vh;
+  }
+  #big-greeting {
+    font-size: 8em;
+  }
+  #big-greeting-sub {
+    font-size: 2.5em;
+  }
+  #about-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about {
+    height: 350px;
+  }
+  #about-selfie, #about-desc {
+    margin: 0;
+  }
+  #about-selfie {
+    height: 120px;
+  }
+  #about-desc {
+    margin-top: 2%;
+    max-width: 80%;
+  }
+  #experience {
+    height: 575px;
+  }
+  #experience-resume {
+    margin-top: 10px;
+  }
+  #experience-resume h4 {
+    font-size: 2.5em;
+  }
+  .experience-job-logo {
+    display: none;
+  }
+  .experience-job-desc {
+    width: 70%;
+  }
+  .experience-job-desc h1 {
+    font-size: 4em;
+  }
+  .experience-job-desc p {
+    font-size: 2.2em;
+  }
+  #contact-container {
+    flex-direction: column;
+    webkit-flex-direction: column;
+    align-items: center;
+  }
+  .contact-type {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  .contact-type .center-block {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-default .navbar-nav li {
+    width: 50%;
+  }
+  #experience {
+    height: 600px;
+  }
+  #experience-resume {
+    margin-top: 0px;
   }
 }

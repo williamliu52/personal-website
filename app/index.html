@@ -35,10 +35,6 @@
   <!-- Color the status bar on mobile devices -->
   <meta name="theme-color" content="#000">
 
-  <!-- include Google's Material Design -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-
   <!-- include jQuery for Bootstrap-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -51,7 +47,7 @@
   <!-- include Web Font Loader -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script>
-    Webfont.load({
+    WebFont.load({
       google: {
         families: ['Montserrat', 'Lato']
       }
@@ -63,30 +59,9 @@
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <!-- Header -->
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Navigation -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only navbar-center">
-          <a class="mdl-navigation__link" href="#about">ABOUT</a>
-          <a class="mdl-navigation__link" href="">EXPERIENCE</a>
-          <a class="mdl-navigation__link" href="">PROJECTS</a>
-          <a class="mdl-navigation__link" href="">CONTACT</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-      <span class="mdl-layout-title">Menu</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#about">ABOUT</a>
-        <a class="mdl-navigation__link" href="#experience">EXPERIENCE</a>
-        <a class="mdl-navigation__link" href="#projects">PROJECTS</a>
-        <a class="mdl-navigation__link" href="#contact">CONTACT</a>
-      </nav>
-    </div>
+    
     <!-- End of Header -->
-    <main class="mdl-layout__content">
       <!-- Greeting -->
       <div id="greeting" class="section-div">
         <div id="big-greeting">Will Liu</div>
@@ -121,10 +96,6 @@
 
       </div>
       <!-- End of Contact & Footer -->
-
-
-
-    </main>
   </div>
 
   <!-- build:js scripts/main.min.js -->

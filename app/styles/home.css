@@ -167,7 +167,7 @@ body {
 /* Start of Experience section */
 
 #experience {
-  height: 600px;
+  height: 800px;
   background-color: #000;
   color: #FFF;
   webkit-flex-direction: column;
@@ -214,6 +214,11 @@ body {
 #experience-ibm {
   height: 70px;
   margin-top: 30px;
+}
+
+#experience-ix {
+  height: 110px;
+  margin-top: 50px;
 }
 
 #experience-resume {
@@ -271,7 +276,7 @@ body {
   width: 33%;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .contact-type a {
@@ -340,7 +345,7 @@ body {
     background-size: 900px;
   }
   #experience {
-    height: 500px;
+    height: 700px;
   }
   .experience-job-logo {
     display: none;
@@ -399,7 +404,7 @@ body {
     max-width: 80%;
   }
   #experience {
-    height: 575px;
+    height: 800px;
   }
   #experience-resume {
     margin-top: 10px;

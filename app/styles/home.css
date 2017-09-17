@@ -25,11 +25,11 @@ body {
   display: inline-block;
   float: none;
   vertical-align: top;
-  width: 30%;
+  width: 50%;
 }
 
 .navbar-default .navbar-nav li {
-  width: 33%;
+  width: 25%;
   margin: auto;
 }
 
@@ -163,11 +163,9 @@ body {
 
 /* Start of About Me section */
 
-
-/* Start of Experience section */
-
-#experience {
-  height: 800px;
+/* Start of Projects section */
+#projects {
+  height: 700px;
   background-color: #000;
   color: #FFF;
   webkit-flex-direction: column;
@@ -176,7 +174,54 @@ body {
   justify-content: start;
 }
 
-.experience-container {
+#projects-container {
+  display: flex;
+  webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.projects-proj {
+  display: flex;
+  webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.projects-proj-desc {
+  margin: 10px;
+  width: 60%;
+}
+
+.projects-proj-desc h1, h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+.projects-proj-desc p {
+  font-family: 'Lato', serif;
+  font-size: 2.5em;
+}
+
+.projects-proj-desc a {
+    text-decoration:none;
+}
+/* End of Projects section */
+
+/* Start of Experience section */
+
+#experience {
+  height: 800px;
+  background-color: #FFF;
+  color: #000;
+  webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+#experience-container {
   display: flex;
   webkit-flex-direction: column;
   flex-direction: column;
@@ -229,13 +274,13 @@ body {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #000;
-  color: #FFF;
+  background-color: #FFF;
+  color: #000;
 }
 
 #experience-resume button a {
   text-decoration: none;
-  color: #FFF;
+  color: #000;
 }
 
 
@@ -246,8 +291,8 @@ body {
 
 #contact {
   height: 500px;
-  background-color: #FFF;
-  color: #000;
+  background-color: #000;
+  color: #FFF;
   webkit-flex-direction: column;
   flex-direction: column;
   -webkit-justify-content: start;
@@ -284,7 +329,7 @@ body {
 }
 
 .contact-type a:hover {
-  color: #000;
+  color: #FFF;
 }
 
 

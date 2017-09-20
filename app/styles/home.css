@@ -321,6 +321,9 @@ body {
     background-position-x: center;
     background-size: 900px;
   }
+  #projects {
+    height: 750px;
+  }
   #contact-container {
     width: 95%;
   }

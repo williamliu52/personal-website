@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /* Start of Navbar CSS */
 
 .navbar.navbar-default {
@@ -25,11 +24,11 @@ body {
   display: inline-block;
   float: none;
   vertical-align: top;
-  width: 30%;
+  width: 40%;
 }
 
 .navbar-default .navbar-nav li {
-  width: 33%;
+  width: 25%;
   margin: auto;
 }
 
@@ -43,9 +42,7 @@ body {
   color: #FFF !important;
 }
 
-
 /* End of Navbar CSS */
-
 
 /* Start of Collapsed Navbar CSS */
 
@@ -68,9 +65,7 @@ body {
   display: none;
 }
 
-
 /* End of Collapsed Navbar CSS */
-
 
 /* General values for sections */
 
@@ -85,7 +80,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin-top: 3%;
 }
-
 
 /* CSS for jumbotron/greeting  */
 
@@ -121,14 +115,12 @@ body {
   text-shadow: 1px 1px #5c5a5a;
 }
 
-
 /* End of CSS for jumbotron/greeting  */
-
 
 /* Start of About Me section */
 
 #about {
-  height: 600px;
+  height: 500px;
   background-color: #FFF;
   color: #000;
   -webkit-flex-direction: column;
@@ -160,14 +152,12 @@ body {
   margin-top: 3%;
 }
 
-
 /* Start of About Me section */
-
 
 /* Start of Portfolio section */
 
 #projects {
-  height: 700px;
+  height: 750px;
   background-color: #000;
   color: #FFF;
   webkit-flex-direction: column;
@@ -219,14 +209,12 @@ body {
   text-decoration: none;
 }
 
-
 /* End of Projects section */
-
 
 /* Start of Contact section */
 
 #contact {
-  height: 500px;
+  height: 350px;
   background-color: #FFF;
   color: #000;
   webkit-flex-direction: column;
@@ -250,6 +238,7 @@ body {
 #contact-caption {
   margin-top: 2%;
   text-align: center;
+  width: 70%;
 }
 
 .contact-type {
@@ -268,9 +257,21 @@ body {
   color: #FFF;
 }
 
-
 /* End of Contact section */
 
+/* Start of Blog section */
+
+#blog {
+  height: 350px;
+  background-color: #000;
+  color: #FFF;
+  webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+/* End of Blog section */
 
 /* In between size of desktop and tablet */
 
@@ -305,11 +306,13 @@ body {
   #about {
     height: 350px;
   }
+  #contact {
+    height: 250px;
+  }
   .contact-type {
     font-size: 3em;
   }
 }
-
 
 /* Small devices (tablets, 768px and up) */
 
@@ -322,7 +325,10 @@ body {
     background-size: 900px;
   }
   #projects {
-    height: 750px;
+    height: 800px;
+  }
+  #contact {
+    height: 300px;
   }
   #contact-container {
     width: 95%;
@@ -330,8 +336,10 @@ body {
   .contact-type {
     font-size: 2.5em;
   }
+  #blog {
+    height: 300px;
+  }
 }
-
 
 /* Extra small devices (phones) */
 
@@ -356,7 +364,7 @@ body {
     align-items: center;
   }
   #about {
-    height: 350px;
+    height: 400px;
   }
   #about-selfie, #about-desc {
     margin: 0;
@@ -367,6 +375,9 @@ body {
   #about-desc {
     margin-top: 2%;
     max-width: 80%;
+  }
+  #projects {
+    height: 850px;
   }
   #contact-container {
     flex-direction: column;
@@ -382,6 +393,9 @@ body {
     text-align: left;
     margin-right: 0;
     margin-left: 0;
+  }
+  #blog {
+    height: 250px;
   }
 }
 
